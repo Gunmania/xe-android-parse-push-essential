@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="0.2">
+	<title xml:lang="ko">푸시알림</title>
+	<title xml:lang="en">PushNofify</title>
+	<description xml:lang="ko">모바일 앱으로 푸시를 보내기 위한 모듈</description>
+	<version>0.1</version>
+	<date>2013-10-17</date>
+	<category>package</category>
+
+	<author email_address="d.gunmania@gmail.com" link="http://gunmania.kr">
+		<name xml:lang="ko">Gunmania</name>
+		<name xml:lang="en">Gunmania</name>
+	</author>
+</module>

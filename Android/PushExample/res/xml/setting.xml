@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:title="환경설정">
+	<PreferenceCategory 
+	    android:title="설정 (앱 재시작 후 적용)">
+        <CheckBoxPreference 
+            android:title="푸시 알림" 
+            android:summary="푸시 알림 사용 여부를 결정합니다." 
+            android:key="pushnotify" 
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+</PreferenceScreen>
