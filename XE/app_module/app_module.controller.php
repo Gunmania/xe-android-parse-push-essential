@@ -18,11 +18,13 @@ class app_moduleController extends app_module {
 	    if(!$member_srl) return new Object();
  
 	    if(!$_SESSION["obid"]) return new Object();
+
+	    $args->member_srl = $member_srl;
+	    $args->obid = $_SESSION["obid"];
+
+	    $output = executeQuery('app_module.updateObid', $args);
  
-	    $query = "update xe_member set `obid` = '".$_SESSION["obid"]."' where `member_srl` = ".$member_srl;
-	    $sql = mysql_query($query);
- 
-	    if($sql) {
+	    if($output->toBool()) {
 			unset($_SESSION["obid"]);
 			return new Object();
 	    }
